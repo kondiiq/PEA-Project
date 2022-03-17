@@ -1,3 +1,11 @@
+"""
+import dynamic_knapsack
+import brute_force_knapsack
+import genetic_alg_knaosack
+import non_optimal_rand_knapsack
+import non_optimal_max_value_knapsack
+"""
+
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.

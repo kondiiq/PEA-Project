@@ -1,10 +1,11 @@
+import random
+
 def generate_items(number: int):
     pass
 
 
 if __name__ == '__main__':
-    max_weight = 0
-    numberOfItems = 4
-    generate_items(numberOfItems)
-    
+    actual_weight = 0
+    max_package = False
+    numberOfItems = 10
     pass
