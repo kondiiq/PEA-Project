@@ -1,4 +1,5 @@
 import random
+import big_o
 
 
 def generate_items_weight_cost(num : int):
