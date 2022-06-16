@@ -1,10 +1,3 @@
-# knapsack_annealing.py
-# using classical simulated annealing
-# Python 3.7.6 (Anaconda3 2020.02)
-
-
-# maximize actual_valuealue
-
 import numpy as np
 
 
