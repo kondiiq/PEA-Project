@@ -1,13 +1,19 @@
-import random
-import big_o
+def knapSack(max_capaxity, weight, value, n):
+    # initial conditions
+    if n == 0 or max_capaxity == 0:
+        return 0
+    # If weight is higher than capacity then it is not included
+    if weight[n - 1] > max_capaxity:
+        return knapSack(max_capaxity, weight, value, n - 1)
+    # return either nth item being included or not
+    else:
+        return max(value[n - 1] + knapSack(max_capaxity - weight[n - 1], weight, value, n - 1),
+                   knapSack(max_capaxity, weight, value, n - 1))
 
 
-def generate_items_weight_cost(num:int):
-    pass
-
-
-if __name__ == "__main__":
-    actual_weight = 0
-    max_package = False
-    numberOfItems = 10
-    pass
+# To test above function
+value = [135, 139, 149, 150, 156, 163, 173, 184, 192, 201, 210, 214, 221, 229, 240]
+weight = [70, 73, 77, 80, 82, 87, 90, 94, 98, 106, 110, 113, 115, 118, 120]
+max_capaxity = 750
+n = len(value)
+print(knapSack(max_capaxity, weight, value, n))
